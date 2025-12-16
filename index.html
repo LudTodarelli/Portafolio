@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="Assets/favicon2.ico" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <a
+        href="#"
+        class="burger"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        <span></span><span></span><span></span>
+      </a>
+
+      <nav id="menu" class="menu">
+        <a href="#hola">Hola</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- Sección Hola -->
+    <section id="hola" class="section-bg bg-hola">
+      <div class="overlay">
+        <div class="hero">
+          <h1>Hola! Soy Lud</h1>
+          <p>Desarrolladora frontend en formación</p>
+
+          <img class="perfil" src="Assets/foto-perfil.jpeg" alt="foto de ludmila" />
+
+          <a href="#conocimientos" class="down bi bi-arrow-down-circle"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección conocimientos -->
+    <section id="conocimientos" class="section-bg bg-conocimientos">
+      <div class="overlay">
+        <h2 class="titulo-seccion">Mis conocimientos</h2>
+
+        <div class="saberes">
+          <div class="saber">
+            <img src="Assets/html.png" alt="logo de html" width="100" />
+            <p>HTML 5</p>
+          </div>
+
+          <div class="saber">
+            <img src="Assets/js.png" alt="logo de Javascript" width="100" />
+            <p>Javascript</p>
+          </div>
+
+          <div class="saber">
+            <img src="Assets/css.jpg" alt="logo de css" width="100" />
+            <p>CSS</p>
+          </div>
+
+          <div class="saber">
+            <img src="Assets/ps.jpg" alt="logo de photoshop" width="100" />
+            <p>Photoshop</p>
+          </div>
+
+          <div class="saber">
+            <img src="Assets/ai.png" alt="logo de illustrator" width="120" />
+            <p>Illustrator</p>
+          </div>
+
+          <div class="saber">
+            <img src="Assets/figma-1.jpg" alt="logo de figma" width="100" />
+            <p>Figma</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección frase -->
+    <section class="frase">
+      <p>
+        “La mejor forma de predecir el futuro es inventarlo. En el mundo del software,
+        cada idea tiene el poder de convertirse en realidad. Programar es imaginar,
+        diseñar y construir nuevas posibilidades. Quien escribe código no solo resuelve
+        problemas: crea futuros posibles.”
+      </p>
+      <span>Alan Kay</span>
+    </section>
+
+    <!-- Sección proyectos -->
+    <section id="proyectos" class="section-bg bg-proyectos">
+      <div class="overlay">
+        <h2 class="titulo-seccion">Mis proyectos</h2>
+
+        <div class="proyectos-grilla">
+          <a href="#mi-comida" class="abrir-modal">
+            <div class="card-proyecto">
+              <img src="Assets/comida.jpg" alt="sitio web comidas saludables" width="110" />
+              <p>Comidas saludables</p>
+            </div>
+          </a>
+
+          <a href="#mi-japon" class="abrir-modal">
+            <div class="card-proyecto">
+              <img src="Assets/japon.jpg" alt="sitio web turismo Japón" width="110" />
+              <p>Turismo en Japón</p>
+            </div>
+          </a>
+
+          <a href="#mi-tokyo" class="abrir-modal">
+            <div class="card-proyecto">
+              <img src="Assets/tokyo.jpg" alt="sitio web turismo Tokyo" width="110" />
+              <p>Conociendo Tokyo</p>
+            </div>
+          </a>
+
+          <a href="#mi-fumi" class="abrir-modal">
+            <div class="card-proyecto">
+              <img src="Assets/fumi.jpg" alt="E-commerce productos asiáticos" width="110" />
+              <p>E-commerce Asiático</p>
+            </div>
+          </a>
+
+          <a href="#mi-papas" class="abrir-modal">
+            <div class="card-proyecto">
+              <img src="Assets/papas.jpg" alt="Landing papas McCain" width="110" />
+              <p>Landing McCain</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODALES -->
+    <div id="mi-comida" class="modal">
+      <div class="modal-box">
+        <a href="#proyectos" class="cerrar" aria-label="Cerrar modal">&times;</a>
+        <h2>Comidas saludables</h2>
+        <img src="Assets/comida-larga.jpg" alt="sitio web comida saludable completo" />
+      </div>
+    </div>
+
+    <div id="mi-japon" class="modal">
+      <div class="modal-box">
+        <a href="#proyectos" class="cerrar" aria-label="Cerrar modal">&times;</a>
+        <h2>Turismo en Japón</h2>
+        <img src="Assets/japon-largo.jpg" alt="sitio web turismo Japón completo" />
+      </div>
+    </div>
+
+    <div id="mi-tokyo" class="modal">
+      <div class="modal-box">
+        <a href="#proyectos" class="cerrar" aria-label="Cerrar modal">&times;</a>
+        <h2>Conociendo Tokyo</h2>
+        <img src="Assets/tokyo-largo.jpg" alt="sitio web turismo Tokyo completo" />
+      </div>
+    </div>
+
+    <div id="mi-fumi" class="modal">
+      <div class="modal-box">
+        <a href="#proyectos" class="cerrar" aria-label="Cerrar modal">&times;</a>
+        <h2>E-commerce</h2>
+        <img src="Assets/fumi-largo.jpg" alt="E-commerce productos asiáticos completo" />
+      </div>
+    </div>
+
+    <div id="mi-papas" class="modal">
+      <div class="modal-box">
+        <a href="#proyectos" class="cerrar" aria-label="Cerrar modal">&times;</a>
+        <h2>Landing papas</h2>
+        <img src="Assets/papas-largo.jpg" alt="Landing page papas McCain" />
+      </div>
+    </div>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section-bg bg-contacto">
+      <div class="overlay">
+        <h2 class="titulo-seccion">Contacto</h2>
+
+        <div class="contacto-card">
+          <form class="form-contacto">
+            <h3>Mensajes</h3>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Joan" />
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Doe" />
+
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" placeholder="joan.doe@mimail.com" />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+
+            <button type="button" class="btn">Enviar</button>
+          </form>
+
+          <div class="contacto-media">
+            <img src="Assets/ilustracion-1.svg" alt="chica exponiendo" />
+          </div>
+
+          <aside class="redes">
+            <h3>Redes</h3>
+
+            <a href="https://www.behance.net/ludtodarelli" target="_blank" rel="noreferrer">
+              <i class="bi bi-behance"></i><span>/ludtodarelli</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ludmila-todarelli-front-end-dev/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="bi bi-linkedin"></i><span>ludmila-todarelli-front-end-dev</span>
+            </a>
+
+            <a href="mailto:ludmila.todarelli@gmail.com">
+              <i class="bi bi-envelope-fill"></i><span>ludmila.todarelli@gmail.com</span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#hola">Hola</a>
+        <a href="#conocimientos">Conocimientos</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-iconos">
+        <a href="https://www.behance.net/ludtodarelli" target="_blank" rel="noreferrer">
+          <i class="bi bi-behance"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ludmila-todarelli-front-end-dev/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:ludmila.todarelli@gmail.com">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
